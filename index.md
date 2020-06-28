@@ -1,52 +1,56 @@
 ## Table of Contents
-* [Overview](#overview)
-* [Functionality Goals](#functionality-goals)
-* [User Guide](#johnsonslist-walkthrough)
-* [Installation](#installation-and-running)
+* [Home](#home)
+* [Contact Us](#contact-us)
+* [User Guide](#user-guide)
 
-## Overview
+## Home
 
-Johnslists list is a website utilizing semantic ui, react.js, meteor, and mongoDB to create a website that can be used by students to trade common goods. Community members of UH Manoa can add common goods, such as textbooks or appliances, that they no longer need and create listings with details about said item. 
+LOHK is a web application utilizing semantic ui, react.js, meteor, and mongoDB to create a password manager for anybody to use. However, LOHK is not just exclusively for passwords. Credit cards and debit cards can also be stored with card number, security pin, and expiration date. All users have to do is select the "Add Credit Card" or "Add Account" options on the main page and it will redirect them to a form to fill out the information. 
 
 For more information on the techstack used:
 * [Meteor](https://www.meteor.com/) for Javascript-based implementation of client and server code. 
 * [React](https://reactjs.org/) for component-based UI implementation and routing.
 * [Semantic UI React](https://react.semantic-ui.com/) CSS Framework for UI design.
-* [MongoDB](https://www.mongodb.com/) Backend Database for adding objects 
+* [MongoDB](https://www.mongodb.com/) Backend Database for adding objects
 
-## Functionality Goals
+LOHK's central home page can be viewed below:
+![](doc/home.png)
 
-* Two types of users: Regular and Admin (Both of which log in from the same page, but get directed to different home screens)
-* Profiles can be customized to display a picture and a description of the person
-* Add listing, edit listing, and view listings usability features (Regular users can only add/edit their own while admins can have functionality for all listings)
-* Listings can be filtered depending on what specifically the user is looking for (Ex. textbooks specifically for biology)
-* Users can flag or report listings that are not related to what the site's purpose is for to admins.
+## Contact Us
 
-## Johnsonslist Walkthrough
+LOHK's Development Team:
 
-Johnsonslist will feature a selection of pages for the user to comb through. There will be a screenshot of each page below with a description of usability.
+- Corben Broennimann - Front End
+    - Email - corben@hawaii.edu
+- Jake Camarao - Back End
+    - Email - jcamarao@hawaii.edu
+- Kyra Ikeda - Front End 
+    - Email - kyrai@hawaii.edu
+- James Lau - Back End
+    - Email - jklau88@hawaii.edu
 
-## Landing/Home page
+## User Guide
 
-![](app/public/images/homepage.jpg)
+To navigate through LOHK, you will first be redirected to the landing page From here, you can either proceed to the sign-in page if you already are registered. If you are a new user, you can click the "GET STARTED" button to get redirected to the sign-up page.
 
-The homepage will feature navigation to the multiple tabs. The user will be directed here upon start up of application and can navigate without logging in, however, will have limited usability.
+![](doc/landing.png)
 
-![](app/public/images/dropdown.jpg)
+If you are just signing-up for the first time, you will simply have to create an account and you will be redirected to the home page upon a successful creation. However, every session after that will require the pin.
 
-The dropdown at the top left of the homepage will allow users to specifically be directed towards the page that they wish to see.
-## Installation and Running
+![](doc/signup.png)
 
-To intially run the application, [install Meteor](https://www.meteor.com/install).
+If you already have an account and are signing-in as a reoccurring user, after logging in, you will be redirected to a page where you will get a pin sent to your registered email to access your account. This will occur every session to protect sensitive information.
 
-```
-$ meteor npm install
-```
+![](doc/signin.png)
 
-From there, one must do the following command to start up the application:
+![](doc/pin.png)
 
-```
-$ meteor npm run start
-```
+Once you successfully sign-up or sign-in, you are now redirected to the home page. From here, you can click on the "Credit Cards" or the "Accounts" button to display the information that you wish to see. If you wish to add a new account or new card, you can click the "Add Account" or "Add Credit Card" in the side bar or the "Add Account" or "Add Card" in the topbar. 
 
-If done correctly, the application will appear at [http://localhost:3000](http://localhost:3000). 
+![](doc/home.png)
+
+You will then get redirected to either a page where you are asked to fill out information about the account or card that you wish to have saved. Once everything is filled out, you can just click submit and go back to the home page. It should now be displayed!
+
+![](doc/addaccount.png)
+
+![](doc/addcard.png)
